@@ -1,0 +1,102 @@
+/* Navigation Link */
+@keyframes highlight{
+    0%{
+        transform: scale(1.1)
+    }
+    25%{
+        transform: scale(1.0)
+    }
+    50%{
+        transform: scale(1.03)
+    }
+    75%{
+        transform: scale(1.09)
+    }
+    100%{
+        transform: scale(1.1)
+    }
+}
+@media screen and (min-width:320px){
+
+div .nav-l{
+    margin:0;
+    color:#002347;
+}
+div > p.nav-l{
+    font-size:1em;
+}
+/* Features Icon on home page */
+.single_feature > .icon{
+    color:#012c57
+}
+.home_banner_area{
+    animation: none;
+    height: 1000px;
+}
+.dual-overlay{
+    position:absolute;
+    width:100%;
+    top:15%;
+    z-index:5;
+}
+.login-user{
+    margin-top:25%;
+}
+/* Help on home page */
+.register_form{
+    background-color:rgba(255,255,255,.9);
+    border-radius: 30px;
+    box-shadow:1px 1px 1px rgba(0,0,0,.3);
+}
+.register_form input{
+    color: #495057;
+    background-color:transparent;
+    border-bottom-color: rgb(100,100,100);
+}
+.register_form textarea{
+    resize: none;border:0;
+    border-radius:0;
+    border-bottom:1px solid #eeeeee;
+    font-size:inherit;
+    font-size: .9em
+}
+.register_form textarea:focus{
+    box-shadow: none;
+    border-color:#eeeeee
+}
+.header_area .navbar{
+    background-color:#ffffff;
+    box-shadow:1px 1px 1px rgba(0,0,0,.5);
+}
+/* footer padding */
+footer.footer-area.gap{
+    padding-top:2px;
+    padding-bottom:10px;
+}
+div.nice-select{
+    margin-top:5px!important;
+}
+}
+/* @media screen and (min-width:768px) and (max-width:1024px){
+    .home_banner_area{
+        min-height: 650px;
+    }
+} */
+@media screen and (min-width:1024px){
+    .home_banner_area{
+        animation-name: highlight;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition: all 1s linear;
+            height:auto;
+    }
+    div .nav-l{
+        margin-left:35%;
+        color:#002347;
+        margin-bottom:0;
+    }
+    div > p.nav-l{
+        font-size:1.5em;
+    }
+}
+
